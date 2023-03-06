@@ -1,5 +1,5 @@
 [package]
-name = "glium"
+name = "ray_tracer"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,5 +9,8 @@ edition = "2021"
 glium = "*"
 egui = "*"
 egui_glium = "*"
-image="*"
-nalgebra = "*"
+rayon="*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+rfd = "*"
+rand = "*"
