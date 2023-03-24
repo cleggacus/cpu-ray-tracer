@@ -57,6 +57,10 @@ impl ShowableUI<&mut World> for CameraSettings {
               }
             }
 
+            ui.label("Miss Color");
+            ui.color_edit_button_rgb(&mut world.camera_mut().camera_info_mut().miss_color);
+            ui.end_row(); 
+
             ui.label("Viewport");
             ui.horizontal(|ui| {
               ui.add(

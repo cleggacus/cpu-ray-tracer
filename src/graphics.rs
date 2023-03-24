@@ -93,6 +93,6 @@ impl Graphics {
 
     target.clear_color(0_f32, 0_f32, 0_f32, 1_f32);
 
-    self.texture.as_surface().blit_whole_color_to(target, &dest_rect, MagnifySamplerFilter::Nearest);
+    self.texture.as_surface().blit_whole_color_to(target, &dest_rect, MagnifySamplerFilter::Linear);
   }
 }
